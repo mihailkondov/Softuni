@@ -4,11 +4,11 @@
  
 ## 1. C# Basics (October 2022)
   Solutions to the problem sets from the introductory C# course at SoftUni  
-    - Basic console read/write  
-    - If-else checks  
-    - switch statements  
-    - for loops  
-    - while loops  
+  - Basic console read/write  
+  - If-else checks  
+  - switch statements  
+  - for loops
+  - while loops  
     
 ## 5. DB (September 2023)
   The solutions to the problem sets from the DB course at SoftUni, consisting of T-SQL queries for SQL Server database. The topics covered are:  
