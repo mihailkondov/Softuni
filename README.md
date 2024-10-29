@@ -1,5 +1,5 @@
 # SoftUni C# Course Series Problem Sets Solved
- My solutions to the problem sets from all courses I have attended at SoftUni:  
+ My solutions to the problem sets from all courses I have attended at SoftUni. Description for each course below. If there is no description, that means I have not uploaded the solutions yet. 
  1. C# Basics (October 2022)
  2. C# Fundamentals (January 2023)
  3. C# Advanced (May 2023)
