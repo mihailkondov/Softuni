@@ -12,7 +12,7 @@
  10. JS-Front-End (February 2024)  
      
 ## 1. C# Basics (October 2022)
-  The C# introductory course at SoftUni  
+  The C# introductory course at SoftUni, which covers the following topics:  
   - Basic console read/write  
   - If-else checks  
   - switch statements  
