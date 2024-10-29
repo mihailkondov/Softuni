@@ -1,7 +1,16 @@
 # SoftUni C# Course Series Problem Sets Solved
  My solutions to the problem sets from all courses I have attended at SoftUni:  
- 1. C# Basics (October 2022)  
- 
+ 1. C# Basics (October 2022)
+ 2. C# Fundamentals (January 2023)
+ 3. C# Advanced (May 2023)
+ 4. C# OOP (June 2023)
+ 5. DB with T-SQL / SQL Server (September 2023)
+ 6. C# Entity Framework Core (October 2023)
+ 7. C# ASP.NET Fundamentals (January 2024)
+ 8. HTML and CSS (February 2024)
+ 9. ASP.NET Advanced (January 2024)
+ 10. JS-Front-End (February 2024)  
+     
 ## 1. C# Basics (October 2022)
   Solutions to the problem sets from the introductory C# course at SoftUni  
   - Basic console read/write  
