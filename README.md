@@ -9,7 +9,9 @@
  7. C# ASP.NET Fundamentals (January 2024)
  8. HTML and CSS (January 2024)
  9. ASP.NET Advanced (February 2024)
- 10. JS-Front-End (February 2024)  
+ 10. JS-Front-End (February 2024)
+
+Note: Some comments use tabs to create ascii tables and schemas, but github converts my 4 space tabs to 8 space tabs. Sadly GitHub doesn't offer repository level setting for this. To fix the distortions you can either add ?ts=4 to the end of the url on github or set your default repository tab render to 4 spaces from Settings > Appearance > Tab size preference (I don't recommend it).
      
 ## 1. C# Basics (October 2022)
   The C# introductory course at SoftUni, which covers the following topics:  
