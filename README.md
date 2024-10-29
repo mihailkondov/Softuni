@@ -12,7 +12,7 @@
  10. JS-Front-End (February 2024)  
      
 ## 1. C# Basics (October 2022)
-  Solutions to the problem sets from the introductory C# course at SoftUni  
+  The C# introductory course at SoftUni  
   - Basic console read/write  
   - If-else checks  
   - switch statements  
@@ -20,11 +20,11 @@
   - while loops  
     
 ## 5. DB (September 2023)
-  The solutions to the problem sets from the DB course at SoftUni, consisting of T-SQL queries for SQL Server database. The topics covered are:  
+  The basic database course at SoftUni in the dotnet curriculum is about working with SQL server and writing queries in T-SQL. The topics covered are:  
   - CRUD operations  
   - Table relations  
-  - Built-in functions,  (AVG, COUNT, MIN, MAX, SUBSTRING, basic arithmetic operations, ... )  
-  - Indices and data aggregation (GROUP, OVER (PARTITION BY... ORDER BY... ), RANK, DENSE_RANK, ROW_NUMBER, ... )  
+  - Built-in functions,  
+  - Indices and data aggregation  
   - Subqueries and joins  
   - Functions stored procedures  
   - Try-catch statements  
