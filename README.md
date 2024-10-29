@@ -7,8 +7,8 @@
  5. DB with T-SQL / SQL Server (September 2023)
  6. C# Entity Framework Core (October 2023)
  7. C# ASP.NET Fundamentals (January 2024)
- 8. HTML and CSS (February 2024)
- 9. ASP.NET Advanced (January 2024)
+ 8. HTML and CSS (January 2024)
+ 9. ASP.NET Advanced (February 2024)
  10. JS-Front-End (February 2024)  
      
 ## 1. C# Basics (October 2022)
