@@ -15,11 +15,11 @@ namespace MiniORM
         // Properties
         public int Count => Entities.Count;
 
-        public bool IsReadOnly => Entities.IsReadOnly;
-
         internal ChangeTracker<TEntity> ChangeTracker { get; set; }
 
         internal IList<TEntity> Entities { get; set; }
+
+        public bool IsReadOnly => Entities.IsReadOnly;
 
         // Methods
         public void Add(TEntity entity)
