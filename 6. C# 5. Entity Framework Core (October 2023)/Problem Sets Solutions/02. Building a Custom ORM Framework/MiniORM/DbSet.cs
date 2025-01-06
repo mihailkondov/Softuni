@@ -18,6 +18,7 @@ namespace MiniORM
         public bool IsReadOnly => Entities.IsReadOnly;
 
         internal ChangeTracker<TEntity> ChangeTracker { get; set; }
+
         internal IList<TEntity> Entities { get; set; }
 
         // Methods
