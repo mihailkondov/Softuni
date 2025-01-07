@@ -49,8 +49,7 @@ namespace MiniORM
 
         private string GetTableName(Type tableType) 
         {
-            var tableName = ((TableAttribute)_dbSetProperties[tableType]
-                .GetCustomAttribute<TableAttribute>()).Name; // There might be bugs on this line
+            var tableName = ((TableAttribute)Attribute.GetCustomAttribute(tableType, typeof(TableAttribute)))?.Name;
 
             if (tableName == null)
             {
@@ -61,7 +60,7 @@ namespace MiniORM
 
         private void InitializeDbSets()
         {
-            foreach (KeyValuePair<Type, PropertyInfo> dbSet in _dbSetProperties)
+            foreach (var dbSet in _dbSetProperties)
             {
                 var dbSetType = dbSet.Key;
                 var dbSetProperty = dbSet.Value;
@@ -69,7 +68,7 @@ namespace MiniORM
                 var populateDbSetGeneric = typeof(DbContext)
                     .GetMethod("PopulateDbSet", BindingFlags.Instance | BindingFlags.NonPublic)
                     .MakeGenericMethod(dbSetType);
-                populateDbSetGeneric.Invoke(this, new object[] { populateDbSetGeneric });
+                populateDbSetGeneric.Invoke(this, new object[] { dbSetProperty });
             }
         }
 
@@ -242,7 +241,7 @@ namespace MiniORM
             foreach (IEnumerable<object> dbSet in dbSets)
             {
                 var invalidEntities = dbSet
-                    .Where(entity => IsObjectValid(entity))
+                    .Where(entity => !IsObjectValid(entity))
                     .ToArray();
 
                 if (invalidEntities.Any())
