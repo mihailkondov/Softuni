@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var connectionString = @"Server=.;Database=MiniORM;Integrated Security=True;TrustServerCertificate=True;";
         }
     }
 }
