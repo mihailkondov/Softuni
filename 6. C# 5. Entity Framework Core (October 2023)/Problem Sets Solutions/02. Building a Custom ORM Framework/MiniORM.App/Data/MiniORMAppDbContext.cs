@@ -9,14 +9,15 @@ namespace MiniORM.App.Data
 {
     public class MiniORMAppDbContext : DbContext
     {
-        protected MiniORMAppDbContext(string connectionString)
+        public MiniORMAppDbContext(string connectionString)
             : base(connectionString)
         {
         }
 
-        public DbSet<Department> Departmens { get; }
+        // These must correspond exactly to the names of the tables in the database
+        public DbSet<Department> Departments { get; }
         public DbSet<Employee> Employees { get; }
-        public DbSet<EmployeeProject> EmployeesProject { get; }
+        public DbSet<EmployeeProject> EmployeesProjects { get; }
         public DbSet<Project> Projects { get; }
     }
 }
