@@ -3869,7 +3869,7 @@ CREATE TABLE Employees(
   DepartmentID int NOT NULL,
   ManagerID int NULL,
   HireDate smalldatetime NOT NULL,
-  Salary money NOT NULL,
+  Salary DECIMAL(15, 4) NOT NULL,
   AddressID int NULL,
   CONSTRAINT PK_Employees PRIMARY KEY CLUSTERED (EmployeeID ASC)
 )
