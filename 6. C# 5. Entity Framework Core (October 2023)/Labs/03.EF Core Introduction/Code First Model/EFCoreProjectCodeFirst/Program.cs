@@ -18,7 +18,7 @@ namespace EFCoreProjectCodeFirst
                 }
                 db.SaveChanges();
             }
-            Console.WriteLine($"Student {harry.FirstName} {harry.LastName} added to {harry.House.Name}");
+            Console.WriteLine($"{harry.FirstName} {harry.LastName} was sorted into {harry.House.Name}.");
         }
     }
 }
