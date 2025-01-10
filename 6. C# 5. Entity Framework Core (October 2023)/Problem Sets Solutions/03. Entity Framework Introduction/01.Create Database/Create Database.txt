@@ -1,0 +1,1 @@
+Run the script "SoftUni-Database.sql" in "Softuni\5. DB (September 2023)\Problem Sets Solutions\00.Scritps" to create the database for this exercise.
