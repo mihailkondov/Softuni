@@ -17,9 +17,9 @@ Note: Some comments use tabs to create ascii tables and schemas, but github conv
   The C# introductory course at SoftUni, which covers the following topics:  
   - Basic console read/write  
   - If-else checks  
-  - switch statements  
-  - for loops
-  - while loops  
+  - Switch statements  
+  - For loops
+  - While loops  
 
 ## 2. C# Fundamentals (January 2023)  
   - Basic syntax, conditional statements and loops
@@ -31,6 +31,27 @@ Note: Some comments use tabs to create ascii tables and schemas, but github conv
   - Associative Arrays (Dictionaries)
   - Text Processing
   - Regular Expressions
+
+## 3. C# Advanced (May 2023)
+  - Stacks and queues
+  - Multidimensional arrays
+  - Sets and dictionaries (Advanced)
+  - Streams files and directories
+  - Defining classes
+  - Implementing linked lists
+  - Implementing stack and queue
+  - Generics
+  - Iterators and comparators
+
+## 4. C# Object Oriented Programming (June 2023)
+  - Inheritance
+  - Encapsulation
+  - Interfaces and abstraction
+  - Polymorphism
+  - Exception handling
+  - Reflection and attributes
+  - Unit testing
+  - Design Patterns
     
 ## 5. DB (September 2023)
   The basic database course at SoftUni in the dotnet curriculum is about working with SQL server and writing queries in T-SQL. The topics covered are:  
@@ -42,3 +63,16 @@ Note: Some comments use tabs to create ascii tables and schemas, but github conv
   - Functions stored procedures  
   - Try-catch statements  
   - Triggers and transactions  
+
+## 6. C# Entity Framework Core (October 2023)
+  - ADO.NET
+  - ORM fundamentals
+  - Entity framework introduction
+  - Entity relations
+  - LINQ in the context of EF
+  - Advanced querying
+  - Auto-mapping objects
+  - JSON processing
+  - XML processing
+  - Best practices and architecture
+  
