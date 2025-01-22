@@ -20,6 +20,17 @@ Note: Some comments use tabs to create ascii tables and schemas, but github conv
   - switch statements  
   - for loops
   - while loops  
+
+## 1. C# Fundamentals (January 2023)  
+  - Basic syntax, conditional statements and loops
+  - Data types and variables
+  - Arrays
+  - Methods
+  - Lists
+  - Objects and classes
+  - Associative Arrays (Dictionaries)
+  - Text Processing
+  - Regular Expressions
     
 ## 5. DB (September 2023)
   The basic database course at SoftUni in the dotnet curriculum is about working with SQL server and writing queries in T-SQL. The topics covered are:  
