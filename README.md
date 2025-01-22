@@ -21,7 +21,7 @@ Note: Some comments use tabs to create ascii tables and schemas, but github conv
   - for loops
   - while loops  
 
-## 1. C# Fundamentals (January 2023)  
+## 2. C# Fundamentals (January 2023)  
   - Basic syntax, conditional statements and loops
   - Data types and variables
   - Arrays
