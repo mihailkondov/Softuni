@@ -2,7 +2,7 @@
 
 namespace _07.Workshop_ImplementingLinkedListStackAndQueue
 {
-    internal class CustomListButBetter
+    public class CustomListButBetter
     {
         // Fields
         private const int InitialCapacity = 2;
@@ -60,6 +60,7 @@ namespace _07.Workshop_ImplementingLinkedListStackAndQueue
             }
             return false;
         }
+
         public void Insert(int index, int element)
         {
             if (index > this.Count)
@@ -124,9 +125,9 @@ namespace _07.Workshop_ImplementingLinkedListStackAndQueue
             return item;
         }
 
-        public void Swap (int firstIndex, int secondIndex)
+        public void Swap(int firstIndex, int secondIndex)
         {
-            if (firstIndex > this.Count ||  secondIndex > this.Count)
+            if (firstIndex > this.Count || secondIndex > this.Count)
             {
                 throw new ArgumentOutOfRangeException();
             }

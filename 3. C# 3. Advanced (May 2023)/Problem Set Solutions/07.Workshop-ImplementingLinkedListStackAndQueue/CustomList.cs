@@ -1,9 +1,8 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 
 namespace _07.Workshop_ImplementingLinkedListStackAndQueue
 {
-    internal class CustomList
+    public class CustomList
     {
         int _capacity;
         int _count;
