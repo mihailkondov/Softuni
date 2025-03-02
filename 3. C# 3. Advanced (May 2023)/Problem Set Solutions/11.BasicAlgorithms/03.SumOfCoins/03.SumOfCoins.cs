@@ -36,11 +36,9 @@
             foreach (int denomination in coins)
             {
                 coinQuantities.Add(denomination, 0);
-                while (targetSum >= denomination)
-                {
-                    coinQuantities[denomination]++;
-                    targetSum -= denomination;
-                }
+                int rest = targetSum % denomination;
+                coinQuantities[denomination] = (targetSum - rest) / denomination;
+                targetSum = rest;
             }
             return coinQuantities;
         }
