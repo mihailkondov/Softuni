@@ -1,7 +1,10 @@
 ﻿// 07. Binary Search
 
 // Read input
-int[] array = Console.ReadLine()!.Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
+int[] array = Console.ReadLine()!
+    .Split(' ', StringSplitOptions.RemoveEmptyEntries)
+    .Select(int.Parse)
+    .ToArray();
 int element = int.Parse(Console.ReadLine()!);
 
 // Calculate
