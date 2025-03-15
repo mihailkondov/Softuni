@@ -1,0 +1,141 @@
+// *IMPORTANT NOTE:  
+// Judge only accepts mission state values "Finished" and "InProgress" as valid. 
+// This is case sensitive and different from the "inProgress" value given as acceptable in example #2.
+// Check Test input 2.
+
+
+// Test input 1:
+Private 1 Peter Johnson 22.22
+Commando 13 Sam Peterson 13.1 Airforces
+Private 222 Tony Samthon 80.08
+LieutenantGeneral 3 George Stevenson 100 222 1
+End
+
+// Expected Output 1:
+Name: Peter Johnson Id: 1 Salary: 22.22
+Name: Sam Peterson Id: 13 Salary: 13.10
+Corps: Airforces
+Missions:
+Name: Tony Samthon Id: 222 Salary: 80.08
+Name: George Stevenson Id: 3 Salary: 100.00
+Privates:
+  Name: Tony Samthon Id: 222 Salary: 80.08
+  Name: Peter Johnson Id: 1 Salary: 22.22
+
+
+
+// Test input 2:
+
+Engineer 7 Peter Johnson 12.23 Marines Boat 2 Crane 17
+Commando 19 George Stevenson 150.15 Airforces HairyFoot finished Freedom inProgress
+End
+
+// Expected Output 2:
+Name: Peter Johnson Id: 7 Salary: 12.23
+Corps: Marines
+Repairs:
+  Part Name: Boat Hours Worked: 2
+  Part Name: Crane Hours Worked: 17
+Name: George Stevenson Id: 19 Salary: 150.15
+Corps: Airforces
+Missions:
+
+// Test input 3: Test ToString() for all types
+Private 1 Peter Johnson 22.22
+Engineer 7 Peter Johnson 12.23 Marines Boat 2
+Commando 19 George Stevenson 150.15 Airforces
+LieutenantGeneral 3 George Stevenson 1
+Spy 123 James Bond 007
+End
+
+// Expected Output 3:
+Name: Peter Johnson Id: 1 Salary: 22.22
+Name: Peter Johnson Id: 7 Salary: 12.23
+Corps: Marines
+Repairs:
+  Part Name: Boat Hours Worked: 2
+Name: George Stevenson Id: 19 Salary: 150.15
+Corps: Airforces
+Missions:
+Name: George Stevenson Id: 3 Salary: 1.00
+Privates:
+Name: James Bond Id: 123
+Code Number: 7
+
+
+
+// Test 4: invalid corps and invalid mission
+Engineer 1 Elon Musk 9999 SpaceForce tripod 16 starship_heatshield 12
+Commando 20 InvalidCorpsGuyName InvalidCorpsGuySurname 150.15 Hairforces HairyFoot finished Freedom inProgress
+Commando 19 InvalidMissionStateGuyName InvalidMissionStateGuySurname 150.15 Airforces MissionWithInvalidState doomed Freedom inProgress
+End
+
+// Expected output 4:
+Name: InvalidMissionStateGuyName InvalidMissionStateGuySurname Id: 19 Salary: 150.15
+Corps: Airforces
+Missions:
+
+// Test 5: Valid and invalid inputs:
+Engineer 1 Elon Musk 9999 SpaceForce tripod 16 starship_heatshield 12
+Private 1 Peter Johnson 22.22
+Commando 13 Sam Peterson 13.1 Airforces
+Private 222 Tony Samthon 80.08
+LieutenantGeneral 3 George Stevenson 100 222 1
+End
+
+// Expected output 5
+Name: Peter Johnson Id: 1 Salary: 22.22
+Name: Sam Peterson Id: 13 Salary: 13.10
+Corps: Airforces
+Missions:
+Name: Tony Samthon Id: 222 Salary: 80.08
+Name: George Stevenson Id: 3 Salary: 100.00
+Privates:
+  Name: Tony Samthon Id: 222 Salary: 80.08
+  Name: Peter Johnson Id: 1 Salary: 22.22
+
+
+// Test input  6:
+Private 1 Peter1 Johnson1 22.22
+Commando 13 Sam Peterson 13.1 Airforces
+Private 222 Tony Samthon 80.08
+LieutenantGeneral 3 George Stevenson 100 222 1
+Engineer 7 Peter2 Johnson2 12.23 Marines Boat 2 Crane 17
+Commando 19 GeorgeCommando StevensonCommando 150.15 Airforces HairyFoot finished Freedom inProgress
+Engineer 1 Elon Musk 9999 SpaceForce tripod 16 starship_heatshield 12
+Commando 20 InvalidCorpsGuyName InvalidCorpsGuySurname 150.15 Hairforces HairyFoot finished Freedom inProgress
+Commando 19 InvalidMissionStateGuyName InvalidMissionStateGuySurname 150.15 Airforces MissionWithInvalidState doomed Freedom inProgress
+End
+
+// Expected output 6:
+Name: Peter1 Johnson1 Id: 1 Salary: 22.22
+Name: Sam Peterson Id: 13 Salary: 13.10
+Corps: Airforces
+Missions:
+Name: Tony Samthon Id: 222 Salary: 80.08
+Name: George Stevenson Id: 3 Salary: 100.00
+Privates:
+  Name: Tony Samthon Id: 222 Salary: 80.08
+  Name: Peter1 Johnson1 Id: 1 Salary: 22.22
+Name: Peter2 Johnson2 Id: 7 Salary: 12.23
+Corps: Marines
+Repairs:
+  Part Name: Boat Hours Worked: 2
+  Part Name: Crane Hours Worked: 17
+Name: GeorgeCommando StevensonCommando Id: 19 Salary: 150.15
+Corps: Airforces
+Missions:
+Name: InvalidMissionStateGuyName InvalidMissionStateGuySurname Id: 19 Salary: 150.15
+Corps: Airforces
+Missions:
+
+
+
+
+
+
+
+
+
+
+
