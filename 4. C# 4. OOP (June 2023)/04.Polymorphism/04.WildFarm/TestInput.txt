@@ -1,0 +1,52 @@
+// Exercise 4 - Wild Farm
+
+// test input 1
+Cat Sammy 1.1 Home Persian
+Vegetable 4
+End
+
+// expected output 1
+Meow
+Cat [Sammy, Persian, 2.3, Home, 4]
+
+
+
+// test input 2
+Tiger Rex 167.7 Asia Bengal
+Vegetable 1
+Dog Tommy 500 Street
+Vegetable 150
+End
+
+// expected output 2
+ROAR!!!
+Woof!
+Dog does not eat Vegetable!
+Tiger [Rex, Bengal, 167.7, Asia, 0]
+Dog [Tommy, 500, Street, 0]
+
+
+
+// test input 3
+Mouse Jerry 0.5 Anywhere
+Fruit 1000
+Owl Tom 2.5 30
+Meat 5
+End
+
+// expected output 3
+Squeak
+Hoot Hoot
+Mouse [Jerry, 100.5, Anywhere, 1000]
+Owl [Tom, 30, 3.75, 5]
+
+
+
+
+
+
+
+
+
+
+
