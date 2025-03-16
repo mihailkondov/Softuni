@@ -1,0 +1,156 @@
+//// Exercise 1
+// Input 1.1
+
+Car 15 0.3
+Truck 100 0.9
+4
+Drive Car 9
+Drive Car 30
+Refuel Car 50
+Drive Truck 10
+
+// Expected output 1.1
+
+Car travelled 9 km
+Car needs refueling
+Truck travelled 10 km
+Car: 54.20
+Truck: 75.00
+
+
+
+// Input 1.2
+
+Car 30.4 0.4
+Truck 99.34 0.9
+5
+Drive Car 500
+Drive Car 13.5
+Refuel Truck 10.300
+Drive Truck 56.2
+Refuel Car 100.2
+
+// Expected output 1.2
+
+Car needs refueling
+Car travelled 13.5 km
+Truck needs refueling
+Car: 113.05
+Truck: 109.12
+
+
+
+
+//// Exercise 2
+// Input 2.1
+
+
+Car 30 0.04 70
+Truck 100 0.5 300
+Bus 40 0.3 150
+8
+Refuel Car -10
+Refuel Truck 0
+Refuel Car 10
+Refuel Car 300
+Drive Bus 10
+Refuel Bus 1000
+DriveEmpty Bus 100
+Refuel Truck 1000
+
+
+// Expected output 2.1
+
+Fuel must be a positive number
+Fuel must be a positive number
+Cannot fit 300 fuel in the tank
+Bus travelled 10 km
+Cannot fit 1000 fuel in the tank
+Bus needs refueling
+Cannot fit 1000 fuel in the tank
+Car: 40.00
+Truck: 100.00
+Bus: 23.00
+
+
+
+
+
+// Input 2.2 -> test constructors
+
+Car 30 0.04 70
+Truck 0 0.4 200
+Bus 40 0.3 150
+0
+
+// Expected output 2.2
+
+Car: 30.00
+Truck: 0.00
+Bus: 40.00
+
+
+
+
+
+
+// Input 2.3 -> drive until tank is empty
+
+Car 30 0.04 70
+Truck 0 0.4 200
+Bus 40 0.3 150
+2
+Refuel Truck 200
+Drive Truck 95
+
+// Expected output 2.3
+
+Car: 30.00
+Truck: 0.00
+Bus: 40.00
+
+// Input 2.4 -> check if truck tank is leaking
+Car 30 0.04 70
+Truck 0 0.4 200
+Bus 40 0.3 150
+2
+Refuel Truck 200
+Refuel Truck 10
+
+// Expected output 2.4
+Car: 30.00
+Truck: 199.50
+Bus: 40.00
+
+
+// Input 2.5 -> Tank Capacity and leaking tank interaction
+Car 30 0.04 70
+Truck 0 0.4 200
+Bus 40 0.3 150
+1
+Refuel Truck 210
+
+// Expected output 2.5
+Cannot fit 210 fuel in the tank
+Car: 30.00
+Truck: 0.00
+Bus: 40.00
+
+// Input 2.6
+Car 30 0.04 70
+Truck 100 0.5 300
+Bus 40 0.3 150
+1
+Refuel Bus 1000
+
+
+// Input 2.7
+
+Car 30 0.04 70
+Truck 0 0.5 300
+Bus 40 0.3 150
+1
+Refuel Truck 315
+
+
+
