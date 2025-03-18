@@ -1,0 +1,34 @@
+// test input 1
+2147483649 2 3.4 5 invalid 24 -4
+
+// expected output 1
+The element '2147483649' is out of range!
+Element '2147483649' processed - current sum: 0
+Element '2' processed - current sum: 2
+The element '3.4' is in wrong format!
+Element '3.4' processed - current sum: 2
+Element '5' processed - current sum: 7
+The element 'invalid' is in wrong format!
+Element 'invalid' processed - current sum: 7
+Element '24' processed - current sum: 31
+Element '-4' processed - current sum: 27
+The total sum of all integers is: 27
+
+
+// test input 2
+9876 string 10 -2147483649 -8 3 4.86555 8
+
+// expected output 2
+Element '9876' processed - current sum: 9876
+The element 'string' is in wrong format!
+Element 'string' processed - current sum: 9876
+Element '10' processed - current sum: 9886
+The element '-2147483649' is out of range!
+Element '-2147483649' processed - current sum:
+9886
+Element '-8' processed - current sum: 9878
+Element '3' processed - current sum: 9881
+The element '4.86555' is in wrong format!
+Element '4.86555' processed - current sum: 9881
+Element '8' processed - current sum: 9889
+The total sum of all integers is: 9889
