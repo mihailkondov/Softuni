@@ -1,0 +1,31 @@
+// 06. Money Transactions - Test input
+
+// input 1
+1-45.67,2-3256.09,3-97.34
+Deposit 1 50
+Withdraw 3 100
+End
+
+// expected otput 1
+Account 1 has new balance: 95.67
+Enter another command
+Insufficient balance!
+Enter another command
+
+// input 2
+1473653-97.34,44643345-2347.90
+Withdraw 1473653 150.50
+Deposit 44643345 200
+Block 1473653 30
+Deposit 1 30
+End
+
+// expected otuput 2
+Insufficient balance!
+Enter another command
+Account 44643345 has new balance: 2547.90
+Enter another command
+Invalid command!
+Enter another command
+Invalid account!
+Enter another command
