@@ -28,7 +28,7 @@ Console.WriteLine(string.Join(", ", ints));
 static int ReadNumber(int start, int end)
 {
     int n;
-    n = int.Parse(Console.ReadLine());
+    n = int.Parse(Console.ReadLine()!);
     if (n <= start || n >= end)
     {
         throw new ArgumentException($"Your number is not in range {start} - 100!");
