@@ -8,7 +8,8 @@ using _99.LoggerLibrary.Appenders.Interface;
 using _99.LoggerLibrary.Layouts.Interface;
 using _99.LoggerLibrary.Layouts;
 
-ILayout simpleLayout = new SimpleLayout();
+string logFilePath = "../../../logs.txt";
+ILayout simpleLayout = new SimpleLayout(logFilePath);
 IAppender consoleAppender = new ConsoleAppender(simpleLayout);
 ILogger logger = new Logger(consoleAppender);
 logger.Error("3/26/2015 2:08:11 PM", "Errorparsing JSON.");
