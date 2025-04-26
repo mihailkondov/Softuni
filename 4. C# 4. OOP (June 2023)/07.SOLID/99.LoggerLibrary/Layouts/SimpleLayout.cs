@@ -6,12 +6,17 @@ namespace _99.LoggerLibrary.Layouts
 {
     public class SimpleLayout : ILayout
     {
+        public SimpleLayout() 
+        {
+            FilePath = "../../../";
+        }
         public SimpleLayout(string filepath)
         {
             FilePath = filepath + "logs.txt";
         }
 
         public int MessagesAppended { get; private set; }
+
         public string FilePath { get; private set; }
 
         public string Log(string format, ReportLevel reportLevel, string message)

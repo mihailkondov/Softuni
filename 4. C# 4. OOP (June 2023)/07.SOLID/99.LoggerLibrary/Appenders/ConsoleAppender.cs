@@ -23,9 +23,9 @@ namespace _99.LoggerLibrary.Appenders
 
         public ILayout Layout => _layout;
 
-        public void Append(string format, string message, ReportLevel reportLevel)
+        public void Append(string timeStamp, string message, ReportLevel reportLevel)
         {
-            string entry = _layout.Log(format, reportLevel, message);
+            string entry = _layout.Log(timeStamp, reportLevel, message);
             _writer.WriteLine(entry);
         }
 

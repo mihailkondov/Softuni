@@ -3,11 +3,13 @@ using _99.LoggerLibrary.Enums;
 using _99.LoggerLibrary.IO;
 using _99.LoggerLibrary.IO.Interfaces;
 using _99.LoggerLibrary.Layouts.Interface;
+using Microsoft.VisualBasic;
+using System.Drawing;
 using System.Text;
 
 namespace _99.LoggerLibrary.Appenders
 {
-    public class FileAppender : IAppender
+    public class FileAppender : IAppender, IFileAppender
     {
         IWriter _writer;
         ILayout _layout;
@@ -18,6 +20,7 @@ namespace _99.LoggerLibrary.Appenders
             _layout = layout;
             ReportLevel = ReportLevel.Info;
             FilePath = logFilePath;
+            Size = 0;
         }
 
         public string FilePath { get; private set; }
@@ -25,30 +28,23 @@ namespace _99.LoggerLibrary.Appenders
 
         public ILayout Layout => _layout;
 
-        public void Append(string format, string message, ReportLevel reportLevel)
+        public int Size { get; private set; }
+
+        public void Append(string timeStamp, string message, ReportLevel reportLevel)
         {
-            string entry = _layout.Log(format, reportLevel, message);
+            string entry = _layout.Log(Utils.DateFormat.DateFormats, reportLevel, message);
+            Size += entry.Where(c => char.IsLetter(c)).Sum(c => (int)c);
             _writer.WriteLine(entry);
         }
 
         public override string ToString()
         {
-            long sumOfChars = 0;
-            using (var reader = new StreamReader(FilePath))
-            {
-                int c;
-                while((c = reader.Read()) != -1)
-                {
-                    sumOfChars += c;
-                }
-            }
-
             StringBuilder sb = new StringBuilder();
             sb.Append($"Appender type: {GetType().Name}, ");
             sb.Append($"Layout type: {Layout.GetType().Name}, ");
             sb.Append($"Report level: {ReportLevel}, ");
             sb.Append($"Messages appended: {Layout.MessagesAppended}, ");
-            sb.Append($"File size: {sumOfChars}");
+            sb.Append($"File size: {Size}");
 
             return sb.ToString();
         }

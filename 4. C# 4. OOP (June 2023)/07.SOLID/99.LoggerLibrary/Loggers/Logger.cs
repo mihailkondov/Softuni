@@ -8,7 +8,7 @@ namespace _99.LoggerLibrary.Loggers
 {
     public class Logger : ILogger
     {
-        ICollection<IAppender> _appenders = new Collection<IAppender>();
+        private readonly ICollection<IAppender> _appenders = new Collection<IAppender>();
 
         public Logger(params IAppender[] appenders)
         {
@@ -19,14 +19,14 @@ namespace _99.LoggerLibrary.Loggers
             }
         }
 
-        public void Fatal(string format, string message)
+        public void Fatal(string timeStamp, string message)
         {
-            Log(format, message, ReportLevel.Fatal);
+            Log(timeStamp, message, ReportLevel.Fatal);
         }
 
-        public void Critical(string format, string message)
+        public void Critical(string timeStamp, string message)
         {
-            Log(format, message, ReportLevel.Critical);
+            Log(timeStamp, message, ReportLevel.Critical);
         }
 
         public void Error(string format, string message)
@@ -34,23 +34,23 @@ namespace _99.LoggerLibrary.Loggers
             Log(format, message, ReportLevel.Error);
         }
 
-        public void Warning(string format, string message)
+        public void Warning(string timeStamp, string message)
         {
-            Log(format, message, ReportLevel.Warning);
+            Log(timeStamp, message, ReportLevel.Warning);
         }
 
-        public void Info(string format, string message)
+        public void Info(string timeStamp, string message)
         {
-            Log(format, message, ReportLevel.Info);
+            Log(timeStamp, message, ReportLevel.Info);
         }
 
-        public void Log(string format, string message, ReportLevel logEntryImportance)
+        public void Log(string timeStamp, string message, ReportLevel logEntryImportance)
         {
             foreach (var appender in _appenders)
             {
                 if (logEntryImportance >= appender.ReportLevel)
                 {
-                    appender.Append(format, message, logEntryImportance);
+                    appender.Append(timeStamp, message, logEntryImportance);
                 }
             }
         }
